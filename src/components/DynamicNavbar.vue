@@ -11,7 +11,7 @@
         <RouterLink to="/jadwal">
           <div class="font-semibold text-white cursor-pointer hover:scale-110 hover:border-b transition duration-200 ease-in-out">Jadwal</div>
         </RouterLink>
-        <RouterLink to="/login">
+        <RouterLink to="/masuk">
           <div class="font-semibold text-white cursor-pointer hover:scale-110 hover:border-b transition duration-200 ease-in-out">Login</div>
         </RouterLink>
       </div>

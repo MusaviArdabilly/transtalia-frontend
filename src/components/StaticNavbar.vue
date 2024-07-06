@@ -11,7 +11,7 @@
         <RouterLink to="/jadwal">
           <div :class="{ 'border-b border-black': isOnSchedulePage }" class="font-semibold text-black cursor-pointer hover:scale-110 hover:border-b hover:border-black transition duration-200 ease-in-out">Jadwal</div>
         </RouterLink>
-        <RouterLink to="/login">
+        <RouterLink to="/masuk">
           <div :class="{ 'border-b border-black': isOnLoginPage }" class="font-semibold text-black cursor-pointer hover:scale-110 hover:border-b hover:border-black transition duration-200 ease-in-out">Login</div>
         </RouterLink>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <StaticNavbar :isOnSchedulePage="true"/>
   <div class="container mx-auto mt-14 py-4">
-    <h1 class="text-center text-3xl font-bold">Jadwal Bus</h1>
+    <h1 class="text-center text-3xl font-bold mt-8">Jadwal Bus</h1>
     <FullCalendar :options="calendarOptions"/>
   </div>
 </template>
