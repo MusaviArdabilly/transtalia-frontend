@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 w-full bg-white shadow z-10 p-5 md:p-0">
+  <header class="fixed top-0 w-full bg-white shadow z-10 p-5 md:p-0">
     <div class="max-w-6xl flex h-14 justify-between items-center mx-auto">
       <RouterLink to="/">
         <div class="flex items-center space-x-2 drop-shadow brightness-150 cursor-pointer hover:scale-110 transition duration-200 ease-in-out">
