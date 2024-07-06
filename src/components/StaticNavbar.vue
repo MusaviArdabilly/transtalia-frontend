@@ -9,12 +9,21 @@
       </RouterLink>
       <div class="flex items-center space-x-10">
         <RouterLink to="/jadwal">
-          <div class="font-semibold text-black cursor-pointer hover:scale-110 hover:border-b hover:border-slate-500 transition duration-200 ease-in-out">Jadwal</div>
+          <div :class="{ 'border-b border-black': isOnSchedulePage }" class="font-semibold text-black cursor-pointer hover:scale-110 hover:border-b hover:border-black transition duration-200 ease-in-out">Jadwal</div>
         </RouterLink>
         <RouterLink to="/login">
-          <div class="font-semibold text-black cursor-pointer hover:scale-110 hover:border-b hover:border-slate-500 transition duration-200 ease-in-out">Login</div>
+          <div :class="{ 'border-b border-black': isOnLoginPage }" class="font-semibold text-black cursor-pointer hover:scale-110 hover:border-b hover:border-black transition duration-200 ease-in-out">Login</div>
         </RouterLink>
       </div>
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  props: {
+    isOnSchedulePage: Boolean,
+    isOnLoginPage: Boolean
+  }
+}
+</script>
