@@ -25,6 +25,17 @@ const router = createRouter({
       path: '/daftar',
       name: 'Daftar',
       component: () => import('../views/Register.vue')
+    },
+    {
+      path: '/admin',
+      component: () => import('../views/admin/Layout.vue'),
+      children: [
+        {
+          path: 'dashboard',
+          name: 'Dashboard',
+          component: () => import('../views/admin/Dashboard.vue')
+        }
+      ]
     }
   ]
 })
