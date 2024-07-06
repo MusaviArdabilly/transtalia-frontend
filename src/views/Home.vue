@@ -26,21 +26,21 @@
       <div class="grid grid-rows-2">
         <div class="grid grid-cols-3 place-items-center gap-5">
           <div class="text-center">
-            <i class="text-4xl fa-regular fa-calendar-days mb-5"></i>
+            <box-icon name="calendar" size="lg" class="mb-5"></box-icon>
             <div>
               <h1 class="font-medium">Pengalaman (Tahun)</h1>
               <h1 class="font-bold">8</h1>
             </div>
           </div>
           <div class="text-center">
-            <i class="text-4xl fa-regular fa-face-smile mb-5"></i>
+            <box-icon name="smile" size="lg" class="mb-5"></box-icon>
             <div>
               <h1 class="font-medium">Pelanggan Terupaskan</h1>
               <h1 class="font-bold">1534+</h1>
             </div>
           </div>
           <div class="text-center">
-            <i class="text-4xl fa-solid fa-globe mb-5"></i>
+            <box-icon name="globe" size="lg" class="mb-5"></box-icon>
             <div>
               <h1 class="font-medium">Jangkauan Destinasi</h1>
               <h1 class="font-bold">Jawa - Bali</h1>
@@ -91,6 +91,7 @@
 </template>
 
 <script>
+import 'boxicons'
 export default {
   data() {
     return {
