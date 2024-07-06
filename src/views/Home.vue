@@ -1,13 +1,19 @@
 <template>
   <header id="navbar" :class="{ 'bg-gray-900/75': isScrolled }" class="fixed w-full z-10 p-5 md:p-0">
     <div class="max-w-6xl flex h-14 justify-between items-center mx-auto">
-      <div class="flex items-center space-x-2 drop-shadow brightness-150 cursor-pointer hover:scale-110 transition duration-200 ease-in-out">
-        <img src="../assets/logo/Logo.png" alt="" class="h-8">
-        <img src="../assets/logo/TextLogo.png" alt="" class="h-6">
-      </div>
+      <RouterLink to="/">
+        <div class="flex items-center space-x-2 drop-shadow brightness-150 cursor-pointer hover:scale-110 transition duration-200 ease-in-out">
+          <img src="../assets/logo/Logo.png" alt="" class="h-8">
+          <img src="../assets/logo/TextLogo.png" alt="" class="h-6">
+        </div>
+      </RouterLink>
       <div class="flex items-center space-x-10">
-        <div class="font-semibold text-white cursor-pointer hover:scale-110 hover:border-b transition duration-200 ease-in-out">Jadwal</div>
-        <div class="font-semibold text-white cursor-pointer hover:scale-110 hover:border-b transition duration-200 ease-in-out">Login</div>
+        <RouterLink to="/jadwal">
+          <div class="font-semibold text-white cursor-pointer hover:scale-110 hover:border-b transition duration-200 ease-in-out">Jadwal</div>
+        </RouterLink>
+        <RouterLink to="/login">
+          <div class="font-semibold text-white cursor-pointer hover:scale-110 hover:border-b transition duration-200 ease-in-out">Login</div>
+        </RouterLink>
       </div>
     </div>
   </header>
@@ -16,9 +22,9 @@
     <div class="w-full absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-center space-y-5 px-5 md:px-0">
       <h1 class="font-bold text-5xl text-white">Trans Talia</h1>
       <h5 class="font-semibold text-lg md:text-xl text-white">Temukan pengalaman transportasi darat yang menarik bersama Trans Talia</h5>
-      <button class="font-semibold border rounded-md text-white px-5 py-2 mt-5 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black transition duration-200 ease-in-out">
-        <a href="/jadwal" class="">Cek Jadwal Sekarang!</a>
-      </button>
+      <RouterLink to="/jadwal">
+        <button class="font-semibold border rounded-md text-white px-5 py-2 mt-5 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black transition duration-200 ease-in-out">Cek Jadwal Sekarang!</button>
+      </RouterLink>
     </div>
   </section>
   <section class="max-w-6xl mx-auto p-5 md:px-0 md:pt-32 md:pb-16">
